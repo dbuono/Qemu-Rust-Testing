@@ -87,7 +87,7 @@ qemu_cmdline="-enable-kvm \
 	-nographic \
 	-nic user,model=virtio-net-pci,mac=52:54:00:12:34:00,hostfwd=tcp::${host_port}-:22 \
 	-drive file=${boot_img},media=disk,if=ide \
-	-m 4G"
+	-m 4G -smp 4"
 
 case "${virtio_daemon_type}" in
 	"QEMU")
